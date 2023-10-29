@@ -97,13 +97,14 @@ public class Login extends AppCompatActivity {
 
                     if (!Objects.equals(passwordFromDB, userPassword)){
                         loginUsername.setError(null);
-                        Intent intent = new Intent(Login.this, MainActivity.class);
+                        Intent intent = new Intent(Login.this, Principal_Activity.class);
                         startActivity(intent);
                     } else {
                         loginPassword.setError("Credenciales no válidas");
                         loginPassword.requestFocus();
                     }
                 } else{
+                    loginUsername.setError("El usuario no existe");
                     loginUsername.setError("El usuario no existe");
                     loginUsername.requestFocus();
                 }

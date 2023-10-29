@@ -29,6 +29,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/berkshire_swash"
                 android:text="Registrarse"
                 android:textAlignment="center"
                 android:textColor="@color/berry_100"

@@ -13,6 +13,27 @@
         android:theme="@style/Theme.Lk_dramas"
         tools:targetApi="31">
         <activity
+            android:name=".Yab_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Empress_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Pfk_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Sdd_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Bof_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Amd_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Principal_Activity"
+            android:exported="false" />
+        <activity
             android:name=".Signup"
             android:exported="false" />
         <activity
@@ -22,10 +43,15 @@
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />2
+                <action android:name="android.intent.action.MAIN" />
+                2
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
