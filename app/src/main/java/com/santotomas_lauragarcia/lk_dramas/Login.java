@@ -97,7 +97,7 @@ public class Login extends AppCompatActivity {
 
                     if (!Objects.equals(passwordFromDB, userPassword)){
                         loginUsername.setError(null);
-                        Intent intent = new Intent(Login.this, Principal_Activity.class);
+                        Intent intent = new Intent(Login.this, Signup.Principal_Activity.class);
                         startActivity(intent);
                     } else {
                         loginPassword.setError("Credenciales no válidas");

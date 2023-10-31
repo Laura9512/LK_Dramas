@@ -1,6 +1,7 @@
 package com.santotomas_lauragarcia.lk_dramas;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -67,4 +69,76 @@ public class Signup extends AppCompatActivity {
         });
     }
 
+    public static class Principal_Activity extends AppCompatActivity {
+        CardView clothingCard, bof, yab, empress, pfk, sdd;
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_principal);
+            clothingCard = findViewById(R.id.clothingCard);
+            clothingCard.setOnClickListener(view -> {
+                Intent intent = new Intent(Principal_Activity.this, Amd_Activity.class);
+                startActivity(intent);
+
+
+            });
+
+            bof = findViewById(R.id.bof);
+            bof.setOnClickListener(view -> {
+                Intent intent = new Intent(Principal_Activity.this, Bof_Activity.class);
+                startActivity(intent);
+
+
+            });
+
+            yab = findViewById(R.id.yab);
+            yab.setOnClickListener(view -> {
+                Intent intent = new Intent(Principal_Activity.this, Yab_Activity.class);
+                startActivity(intent);
+
+
+            });
+
+            empress = findViewById(R.id.empress);
+            empress.setOnClickListener(view -> {
+                Intent intent = new Intent(Principal_Activity.this, Empress_Activity.class);
+                startActivity(intent);
+
+
+            });
+
+            sdd = findViewById(R.id.sdd);
+            sdd.setOnClickListener(view -> {
+                Intent intent = new Intent(Principal_Activity.this, Sdd_Activity.class);
+                startActivity(intent);
+
+
+            });
+
+            pfk = findViewById(R.id.pfk);
+            pfk.setOnClickListener(view -> {
+                Intent intent = new Intent(Principal_Activity.this, Pfk_Activity.class);
+                startActivity(intent);
+
+
+            });
+
+
+
+
+
+            BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+            bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+                if (item.getItemId() == R.id.btn_location) {
+                    Intent intent = new Intent(Principal_Activity.this, Mapa.class);
+                    startActivity(intent);
+                    return true;
+                }
+                return false;
+            });
+
+        }
+
+    }
 }

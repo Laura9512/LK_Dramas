@@ -1,9 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondorojooo"
     tools:context=".Empress_Activity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/clothTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="Empress Ki"
+        android:paddingLeft="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/clothImage"
+        android:layout_width="205dp"
+        android:layout_height="220dp"
+        android:layout_below="@id/clothTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-11dp"
+        android:src="@drawable/empress" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="61dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/clothTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:text=" • Título: "
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginBottom="581dp"
+        android:layout_toEndOf="@+id/textView"
+        android:text="기황후  "
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="67dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="167dp"
+        android:layout_marginBottom="519dp"
+        android:text="• Título en español: "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="121dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="171dp"
+        android:layout_marginBottom="515dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:text="La Emperatriz Ki"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-72dp"
+        android:layout_marginTop="221dp"
+        android:layout_marginBottom="480dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:text="• Género: "
+
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="163dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="-37dp"
+        android:layout_marginBottom="475dp"
+        android:layout_toStartOf="@+id/clothImage"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="Histórico, Romance, Política, Melodrama"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="70dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginBottom="424dp"
+        android:text="• Cadena: "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="123dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginBottom="436dp"
+        android:layout_toStartOf="@+id/clothImage"
+        android:layout_toEndOf="@+id/textView7"
+        android:text="MBC"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="371dp"
+        android:layout_below="@+id/clothImage"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="start|top"
+        android:text="@string/descrip4"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
