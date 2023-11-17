@@ -147,18 +147,18 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="387dp"
+        android:layout_width="381dp"
+        android:layout_height="397dp"
         android:layout_below="@+id/clothImage"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="14dp"
         android:layout_marginBottom="9dp"
         android:gravity="start|top"
-        android:text="@string/descrip5"
+        android:text="@string/descrip6"
         android:textColor="@color/black" />
 
 </RelativeLayout>
