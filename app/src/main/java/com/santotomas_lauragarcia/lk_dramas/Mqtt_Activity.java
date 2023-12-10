@@ -20,11 +20,11 @@ import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.MqttSecurityException;
 import org.w3c.dom.Text;
-public class Mqqtt_Activity extends AppCompatActivity {
+public class Mqtt_Activity extends AppCompatActivity {
     private String clienteId="";
     //Conexión al servidor MQTT
     private static String mqttHost = "tcp://lkdramas-mqtt.cloud.shiftr.io:1883";
-    private static String mattUser = "lkdramas-mqtt";
+    private static String mqttUser = "lkdramas-mqtt";
     private static String mqttPass = "lBhAmkWFHPopsf1r";
 
     private MqttAndroidClient cliente;
